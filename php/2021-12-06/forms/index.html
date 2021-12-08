@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="app.php" method="POST">
+        <li>
+            <h1>Registracija i kursus</h1>
+        </li>
+        <hr style="height:2px;border-width:0;color:black;background-color:black">
+        <ul>
+            <li>
+                <label>Vardas:</label>
+                <input type="text" name="user[name]">
+            </li>
+            <br>
+            <li>
+                <label>Pavarde:</label>
+                <input type="text" name="user[surname]">
+            </li>
+            <br>
+            <li>
+                <label>Miestas:</label>
+                <select name="user[miestai]">
+                <option  value="klaipeda" name="miestas">Klaipeda</option>
+                <option value="kaunas" name="miestas">Kaunas</option>
+                <option value="vilnius" name="miestas">Vilnius</option>
+                 </select>
+            </li>
+            <br>
+            <li>
+                <h1>Programavimo kalba:</h1>
+            </li>
+
+
+            <li>
+                <input type="checkbox" name="lang[]" value="js">
+                <label>JS</label>
+
+            </li>
+            <li>
+                <input type="checkbox" name="lang[]" value="php">
+                <label>PHP</label>
+            </li>
+            <li>
+                <h1>Papildoma informacija</h1>
+            </li>
+            <br>
+            <li>
+                <textarea name="content" id="" cols="30" rows="5"></textarea>
+
+            </li>
+            <br>
+            <li>
+                <button type="submit">Siusti</button>
+            </li>
+
+        </ul>
+    </form>
+</body>
+
+</html>

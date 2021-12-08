@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form method="POST" action="profile.php" enctype="multipart/form-data">
+
+        <h1>Registracija i kursus</h1>
+        <p>Fill all required fields*</p>
+
+        <hr style="height:2px;border-width:0;color:black;background-color:black">
+
+        <label>Vardas*:</label>
+        <input type="text" name="user[name]">
+
+        <label>Pavarde*:</label>
+        <input type="text" name="user[surname]">
+
+        <label>Miestas*:</label>
+        <select name="user[cities]">
+            <option  value="" name=""></option>
+				<option  value="Klaipeda" name="city">Klaipeda</option>
+				<option value="Kaunas" name="city">Kaunas</option>
+				<option value="Vilnius" name="city">Vilnius</option>
+		</select>
+
+        <h1>Programavimo kalba*:</h1>
+
+        <input type="checkbox" name="lang[]" value="JS">
+        <label>JS</label>
+
+        <input type="checkbox" name="lang[]" value="PHP">
+        <label>PHP</label>
+
+        <h1>Papildoma informacija</h1>
+
+        <textarea name="content" id="" cols="30" rows="5" placeholder="text....."></textarea>
+        <br>
+        <input type="file" name="photo">
+        <br>
+        <button type="submit">Siųsti</button>
+    </form>
+</body>
+
+</html>

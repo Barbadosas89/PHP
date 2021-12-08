@@ -1,0 +1,1 @@
+2021/12/06 15:58:43 [error] 31#31: *3 directory index of "/home/code-academy/php/" is forbidden, client: 172.21.0.1, server: , request: "GET / HTTP/1.1", host: "localhost:8081"
