@@ -1,9 +1,5 @@
 <?php
-// $url = 'https://randomuser.me/api/?format=csv';
 
-// $users = file_get_contents($url);
-
-// file_put_contents('users.csv', $users, FILE_APPEND );
 
 $ch = curl_init('https://randomuser.me/api/?format=csv');
 $fp = fopen('server.php', "w");
